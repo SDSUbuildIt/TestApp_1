@@ -10,7 +10,7 @@ import android.widget.RadioGroup;
 import android.widget.Switch;
 
 public class StartScreen extends AppCompatActivity {
-    Switch flatsideYes;
+//    Switch flatsideYes;
     Switch holesYes;
     Switch singlePieceYes;
     Switch detailsYes;
@@ -23,15 +23,13 @@ public class StartScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_begin);
 
-        flatsideYes = (Switch) findViewById(R.id.flatSide);
+//        flatsideYes = (Switch) findViewById(R.id.flatSide);
         holesYes = (Switch) findViewById(R.id.tooManyHoles);
         singlePieceYes = (Switch) findViewById(R.id.multiPart);
         detailsYes = (Switch) findViewById(R.id.details);
         supportYes = (Switch) findViewById(R.id.support);
         sizeSelect = (RadioGroup) findViewById(R.id.sizeGroup);
         specialTypeSelect = (RadioGroup) findViewById(R.id.specialTypeGroup);
-        sizeSelect.check(R.id.size2);
-        specialTypeSelect.check(R.id.shape1);
 
 
 //        Button resetInput = (Button) findViewById(R.id.reset);
@@ -43,7 +41,7 @@ public class StartScreen extends AppCompatActivity {
     }
 
     public void resetForm(View view) {
-        flatsideYes.setChecked(false);
+//        flatsideYes.setChecked(false);
         holesYes.setChecked(false);
         singlePieceYes.setChecked(false);
         detailsYes.setChecked(false);

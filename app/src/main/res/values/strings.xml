@@ -22,8 +22,11 @@
     <string name="flatShape">Flat Sheet</string>
     <string name="tubeShape">Cylindrical</string>
     <string name="defaultShape">N/A</string>
-    <string name="roundShape">Rounded</string>
+    <string name="roundShape">No flat sides</string>
     <string name="sizeText">Model Size</string>
     <string name="shapeText">Special Shape</string>
+    <string name="help">Help</string>
+    <string name="info">Info</string>
+    <string name="infoText">Tap Here for Visual Examples</string>
 
     </resources>

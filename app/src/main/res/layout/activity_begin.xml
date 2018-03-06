@@ -8,180 +8,220 @@
     tools:layout_editor_absoluteY="89dp">
 
     <Switch
-        android:id="@+id/flatSide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:switchPadding="8dp"
-        android:text="@string/flatSideSwitch"
-        app:layout_constraintBottom_toTopOf="@+id/sizeGroup"
-        app:layout_constraintEnd_toEndOf="@+id/sizeGroup"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Switch
-        android:id="@+id/multiPart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:switchPadding="8dp"
-        android:text="@string/multiPartSwitch"
-        app:layout_constraintBottom_toTopOf="@+id/details"
-        app:layout_constraintEnd_toEndOf="@+id/details"
-        app:layout_constraintTop_toBottomOf="@+id/tooManyHoles" />
-
-    <Switch
-        android:id="@+id/details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:switchPadding="8dp"
-        android:text="@string/detailSwitch"
-        app:layout_constraintBottom_toTopOf="@+id/support"
-        app:layout_constraintEnd_toEndOf="@+id/support"
-        app:layout_constraintTop_toBottomOf="@+id/multiPart" />
-
-    <Switch
-        android:id="@+id/support"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:switchPadding="8dp"
-        android:text="@string/supportSwitch"
-        app:layout_constraintBottom_toTopOf="@+id/submit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/details" />
-
-    <Switch
         android:id="@+id/tooManyHoles"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:switchPadding="8dp"
         android:text="@string/tooManyHolesSwitch"
         app:layout_constraintBottom_toTopOf="@+id/multiPart"
         app:layout_constraintEnd_toEndOf="@+id/multiPart"
-        app:layout_constraintTop_toBottomOf="@+id/specialTypeGroup" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoButton" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <Switch
+        android:id="@+id/multiPart"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_weight="1"
-        android:text="@string/sizeText"
-        app:layout_constraintBottom_toTopOf="@+id/sizeGroup"
-        app:layout_constraintEnd_toEndOf="@+id/sizeGroup"
-        app:layout_constraintStart_toStartOf="@+id/sizeGroup" />
+        android:layout_marginStart="16dp"
+        android:switchPadding="8dp"
+        android:text="@string/multiPartSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/details"
+        app:layout_constraintEnd_toEndOf="@+id/details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tooManyHoles" />
 
-    <RadioGroup
-        android:id="@+id/sizeGroup"
-        android:layout_width="wrap_content"
+    <Switch
+        android:id="@+id/details"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/specialTypeGroup"
-        app:layout_constraintEnd_toEndOf="@+id/specialTypeGroup"
-        app:layout_constraintTop_toBottomOf="@+id/flatSide">
+        android:layout_marginStart="16dp"
+        android:switchPadding="8dp"
+        android:text="@string/detailSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/support"
+        app:layout_constraintEnd_toEndOf="@+id/support"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiPart" />
 
-        <RadioButton
-            android:id="@+id/size1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/smallText" />
-
-        <RadioButton
-            android:id="@+id/size2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/mediumText" />
-
-        <RadioButton
-            android:id="@+id/size3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/largeText" />
-
-        <RadioButton
-            android:id="@+id/size4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/hugeText" />
-
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <Switch
+        android:id="@+id/support"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_weight="1"
-        android:text="@string/shapeText"
-        app:layout_constraintBottom_toTopOf="@+id/specialTypeGroup"
-        app:layout_constraintEnd_toEndOf="@+id/specialTypeGroup"
-        app:layout_constraintStart_toStartOf="@+id/specialTypeGroup" />
+        android:layout_marginStart="16dp"
+        android:switchPadding="8dp"
+        android:text="@string/supportSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details" />
 
-    <RadioGroup
-        android:id="@+id/specialTypeGroup"
-        android:layout_width="wrap_content"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/tooManyHoles"
-        app:layout_constraintEnd_toEndOf="@+id/tooManyHoles"
-        app:layout_constraintTop_toBottomOf="@+id/sizeGroup">
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/support">
 
-        <RadioButton
-            android:id="@+id/shape1"
+        <TextView
+            android:id="@+id/sizeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/defaultShape" />
+            android:text="@string/sizeText"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/sizeGroup"
+            app:layout_constraintStart_toStartOf="@+id/sizeGroup"
+            app:layout_constraintTop_toTopOf="@+id/shapeLabel" />
 
-        <RadioButton
-            android:id="@+id/shape2"
+        <TextView
+            android:id="@+id/shapeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/roundShape" />
+            android:text="@string/shapeText"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/specialTypeGroup"
+            app:layout_constraintStart_toStartOf="@+id/specialTypeGroup"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <RadioButton
-            android:id="@+id/shape3"
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:id="@+id/specialTypeGroup"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/flatShape" />
+            android:layout_marginTop="8dp"
+            android:checkedButton="@+id/shape1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sizeGroup"
+            app:layout_constraintTop_toBottomOf="@+id/shapeLabel">
 
-        <RadioButton
-            android:id="@+id/shape4"
-            android:layout_width="wrap_content"
+            <RadioButton
+                android:id="@+id/shape1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/defaultShape" />
+
+            <RadioButton
+                android:id="@+id/shape2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/roundShape" />
+
+            <RadioButton
+                android:id="@+id/shape3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/flatShape" />
+
+            <RadioButton
+                android:id="@+id/shape4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tubeShape" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/sizeGroup"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/tubeShape" />
+            android:checkedButton="@+id/size2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/specialTypeGroup"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/specialTypeGroup">
 
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/size1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/smallText" />
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:onClick="displayResults"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            <RadioButton
+                android:id="@+id/size2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mediumText" />
+
+            <RadioButton
+                android:id="@+id/size3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/largeText" />
+
+            <RadioButton
+                android:id="@+id/size4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hugeText" />
+
+        </RadioGroup>
+    </android.support.constraint.ConstraintLayout>
 
     <Button
         android:id="@+id/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toStartOf="@+id/submit"
         android:onClick="resetForm"
         android:text="@string/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/submit" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:onClick="displayResults"
+        android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        app:layout_constraintBottom_toTopOf="@+id/tooManyHoles"
+        app:layout_constraintEnd_toEndOf="@+id/tooManyHoles"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infoMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/infoText"
+        android:textAlignment="textEnd"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget"
+        app:layout_constraintBottom_toBottomOf="@+id/infoButton"
+        app:layout_constraintEnd_toStartOf="@+id/infoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/infoButton" />
 
 </android.support.constraint.ConstraintLayout>
