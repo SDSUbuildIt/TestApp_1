@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Print Helper</string>
+    <string name="accept">Okay</string>
+    <string name="next">Next</string>
+    <string name="clear">Reset</string>
+    <string name="undef">Undefined</string>
+    <string name="flatSideSwitch">Does the object have a large, flat side to print on?</string>
+    <string name="detailSwitch">Does the model have fine details on its sides?</string>
+    <string name="supportSwitch">Does the object have overhangs?</string>
+    <string name="bigSwitch">Is the object larger than 3 in (7.5 cm) in any dimension?</string>
+    <string name="smallSwitch">Is the object smaller than 1 in (2.5cm) in ALL dimensions?</string>
+    <string name="tooLargeSwitch">Is the object larger than 6 in (15 cm) in any dimension?</string>
+    <string name="thinSwitch">Is the object thinner than 0.125 in (3mm) anywhere?</string>
+    <string name="flatSheetSwitch">Is the model a thin, flat sheet?</string>
+    <string name="tubeSwitch">Is the model a long, narrow tube?</string>
+    <string name="tooManyHolesSwitch">Does the model have an excessive (>10) number of holes?</string>
+    <string name="multiPartSwitch">Is the model one single piece?</string>
+    <string name="smallText">&lt; 1in (2.5cm)</string>
+    <string name="mediumText">Up to 3in (7.5cm)</string>
+    <string name="largeText">Up to 6in (15cm)</string>
+    <string name="hugeText">&gt; 6in (15cm)</string>
+    <string name="flatShape">Flat Sheet</string>
+    <string name="tubeShape">Cylindrical</string>
+    <string name="defaultShape">N/A</string>
+    <string name="roundShape">Rounded</string>
+    <string name="sizeText">Model Size</string>
+    <string name="shapeText">Special Shape</string>
+
+    </resources>

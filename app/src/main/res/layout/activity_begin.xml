@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buildit.joeycasabar.printform.StartScreen"
+    tools:layout_editor_absoluteY="89dp">
+
+    <Switch
+        android:id="@+id/flatSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchPadding="8dp"
+        android:text="@string/flatSideSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/sizeGroup"
+        app:layout_constraintEnd_toEndOf="@+id/sizeGroup"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/multiPart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchPadding="8dp"
+        android:text="@string/multiPartSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/details"
+        app:layout_constraintEnd_toEndOf="@+id/details"
+        app:layout_constraintTop_toBottomOf="@+id/tooManyHoles" />
+
+    <Switch
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchPadding="8dp"
+        android:text="@string/detailSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/support"
+        app:layout_constraintEnd_toEndOf="@+id/support"
+        app:layout_constraintTop_toBottomOf="@+id/multiPart" />
+
+    <Switch
+        android:id="@+id/support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:switchPadding="8dp"
+        android:text="@string/supportSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details" />
+
+    <Switch
+        android:id="@+id/tooManyHoles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchPadding="8dp"
+        android:text="@string/tooManyHolesSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/multiPart"
+        app:layout_constraintEnd_toEndOf="@+id/multiPart"
+        app:layout_constraintTop_toBottomOf="@+id/specialTypeGroup" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:text="@string/sizeText"
+        app:layout_constraintBottom_toTopOf="@+id/sizeGroup"
+        app:layout_constraintEnd_toEndOf="@+id/sizeGroup"
+        app:layout_constraintStart_toStartOf="@+id/sizeGroup" />
+
+    <RadioGroup
+        android:id="@+id/sizeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/specialTypeGroup"
+        app:layout_constraintEnd_toEndOf="@+id/specialTypeGroup"
+        app:layout_constraintTop_toBottomOf="@+id/flatSide">
+
+        <RadioButton
+            android:id="@+id/size1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/smallText" />
+
+        <RadioButton
+            android:id="@+id/size2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mediumText" />
+
+        <RadioButton
+            android:id="@+id/size3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/largeText" />
+
+        <RadioButton
+            android:id="@+id/size4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hugeText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:text="@string/shapeText"
+        app:layout_constraintBottom_toTopOf="@+id/specialTypeGroup"
+        app:layout_constraintEnd_toEndOf="@+id/specialTypeGroup"
+        app:layout_constraintStart_toStartOf="@+id/specialTypeGroup" />
+
+    <RadioGroup
+        android:id="@+id/specialTypeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tooManyHoles"
+        app:layout_constraintEnd_toEndOf="@+id/tooManyHoles"
+        app:layout_constraintTop_toBottomOf="@+id/sizeGroup">
+
+        <RadioButton
+            android:id="@+id/shape1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/defaultShape" />
+
+        <RadioButton
+            android:id="@+id/shape2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/roundShape" />
+
+        <RadioButton
+            android:id="@+id/shape3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/flatShape" />
+
+        <RadioButton
+            android:id="@+id/shape4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tubeShape" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="displayResults"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="resetForm"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
